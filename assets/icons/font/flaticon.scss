@@ -1,0 +1,97 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?1727c3ddfb5b19661ee7bc1e7be752e1") format("truetype"),
+url("./flaticon.woff?1727c3ddfb5b19661ee7bc1e7be752e1") format("woff"),
+url("./flaticon.woff2?1727c3ddfb5b19661ee7bc1e7be752e1") format("woff2"),
+url("./flaticon.eot?1727c3ddfb5b19661ee7bc1e7be752e1#iefix") format("embedded-opentype"),
+url("./flaticon.svg?1727c3ddfb5b19661ee7bc1e7be752e1#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "eye": "\f101",
+    "folder": "\f102",
+    "twitter": "\f103",
+    "facebook": "\f104",
+    "call": "\f105",
+    "placeholder": "\f106",
+    "share": "\f107",
+    "right-arrow": "\f108",
+    "mail": "\f109",
+    "down-arrow-1": "\f10a",
+    "open-magazine": "\f10b",
+    "unlock": "\f10c",
+    "school": "\f10d",
+    "graduation-cap": "\f10e",
+    "spread": "\f10f",
+    "care": "\f110",
+    "hospital": "\f111",
+    "check": "\f112",
+);
+
+.flaticon-eye:before {
+    content: map-get($flaticon-map, "eye");
+}
+.flaticon-folder:before {
+    content: map-get($flaticon-map, "folder");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-call:before {
+    content: map-get($flaticon-map, "call");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
+.flaticon-share:before {
+    content: map-get($flaticon-map, "share");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon-map, "mail");
+}
+.flaticon-down-arrow-1:before {
+    content: map-get($flaticon-map, "down-arrow-1");
+}
+.flaticon-open-magazine:before {
+    content: map-get($flaticon-map, "open-magazine");
+}
+.flaticon-unlock:before {
+    content: map-get($flaticon-map, "unlock");
+}
+.flaticon-school:before {
+    content: map-get($flaticon-map, "school");
+}
+.flaticon-graduation-cap:before {
+    content: map-get($flaticon-map, "graduation-cap");
+}
+.flaticon-spread:before {
+    content: map-get($flaticon-map, "spread");
+}
+.flaticon-care:before {
+    content: map-get($flaticon-map, "care");
+}
+.flaticon-hospital:before {
+    content: map-get($flaticon-map, "hospital");
+}
+.flaticon-check:before {
+    content: map-get($flaticon-map, "check");
+}

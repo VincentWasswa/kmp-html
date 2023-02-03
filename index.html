@@ -1,364 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ministry of Health KMP</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/kmp-styles.css" />
-    <link rel="stylesheet" href="assets/icons/font/flaticon.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  </head>
-  <body>
-    <div id="header-wrapper-front">
-      <div class="container">
-        <div class="d-flex justify-content-end ">
-          <a href="https://www.health.go.ug" target="_blank" class="btn ministry">
-            <span>Ministry website</span>
-            <span><i class="bi bi-box-arrow-up-right"></i></span>
-          </a>
-        </div>
-        
-      </div>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand col-9 col-md-4" href="#">
-            <img src="images/logo-down.png" class="img-fluid" />
-          </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="bi bi-list"></i>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="categories.html">Categories</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="publications.html">Publications</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="multimedia.html">Multimedia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faqs.html">FAQs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="container">
-        <header>
-          <div class="wrap">
-            <p>Health related information resources from MOH and beyond, providing a</p>
-            <h1>Single point of access to valuable information</h1>
-            <form action="/web/search/content" method="get" id="views-exposed-form-search-content-page-1" accept-charset="UTF-8">
-              <div class="form-row">
-                <fieldset class="js-form-item js-form-type-search-api-autocomplete form-type-search-api-autocomplete js-form-item-keys form-item-keys form-no-label mb-3">
-                  <input placeholder="Search publications, articles, keywords, etc" data-drupal-selector="edit-keys" data-search-api-autocomplete-search="search_content" class="form-autocomplete form-control rounded-0 ui-autocomplete-input" data-autocomplete-path="/web/search_api_autocomplete/search_content?display=page_1&amp;&amp;filter=keys" type="text" id="edit-keys" name="keys" value="" size="30" maxlength="128" data-once="autocomplete" autocomplete="off" />
-                </fieldset>
-                <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper mb-3" id="edit-actions"><button data-drupal-selector="edit-submit-search-content" type="submit" id="edit-submit-search-content" value="Search" class="button js-form-submit form-submit btn btn-primary rounded-0 dark-blue border-0">Search</button></div>
-              </div>
-            </form>
-          </div>
-        </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ministry of Health KMP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/kmp-styles.css" />
+  <link rel="stylesheet" href="assets/icons/font/flaticon.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div id="header-wrapper-front">
+    <div class="container">
+      <div class="d-flex justify-content-end ">
+        <a href="https://www.health.go.ug" target="_blank" class="btn ministry">
+          <span>Ministry website</span>
+          <span><i class="bi bi-box-arrow-up-right"></i></span>
+        </a>
       </div>
+
     </div>
-    <section class="categories">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <h2>Find your way</h2>
-        <div class="content">
-          <ul class="home-cat">
-            <li><a href="categories.html">
+        <a class="navbar-brand col-9 col-md-4" href="#">
+          <img src="images/logo-down.png" class="img-fluid" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publications.html">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="multimedia.html">Multimedia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faqs.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <header>
+        <div class="wrap">
+          <p>Health related information resources from MOH and beyond, providing a</p>
+          <h1>Single point of access to valuable information</h1>
+          <form action="/web/search/content" method="get" id="views-exposed-form-search-content-page-1"
+            accept-charset="UTF-8">
+            <div class="form-row">
+              <fieldset
+                class="js-form-item js-form-type-search-api-autocomplete form-type-search-api-autocomplete js-form-item-keys form-item-keys form-no-label mb-3">
+                <input placeholder="Search publications, articles, keywords, etc" data-drupal-selector="edit-keys"
+                  data-search-api-autocomplete-search="search_content"
+                  class="form-autocomplete form-control rounded-0 ui-autocomplete-input"
+                  data-autocomplete-path="/web/search_api_autocomplete/search_content?display=page_1&amp;&amp;filter=keys"
+                  type="text" id="edit-keys" name="keys" value="" size="30" maxlength="128" data-once="autocomplete"
+                  autocomplete="off" />
+              </fieldset>
+              <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper mb-3"
+                id="edit-actions"><button data-drupal-selector="edit-submit-search-content" type="submit"
+                  id="edit-submit-search-content" value="Search"
+                  class="button js-form-submit form-submit btn btn-primary rounded-0 dark-blue border-0">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </header>
+    </div>
+  </div>
+  <section class="categories">
+    <div class="container">
+      <h2>Find your way</h2>
+      <div class="content">
+        <ul class="home-cat">
+          <li><a href="categories.html">
               <span>
                 <i class="flaticon-spread"></i>
               </span>
               <span class="name">Communicable disease</span>
-              </a></li>
-            <li><a href="#">
+            </a></li>
+          <li><a href="#">
               <span><i class="flaticon-care"></i></span>
               <span class="name">Community Health</span>
-              </a></li>
-            <li><a href="#">
+            </a></li>
+          <li><a href="#">
               <span><i class="flaticon-graduation-cap"></i></span>
               <span class="name">Education</span>
-              </a></li>
-            <li><a href="#">
+            </a></li>
+          <li><a href="#">
               <span><i class="flaticon-check"></i></span>
               <span class="name">Health Information Systems</span>
             </a></li>
-            <li>
-              <a href="#">
+          <li>
+            <a href="#">
               <span><i class="flaticon-hospital"></i></span>
               <span class="name">Health Infrastructure</span>
-              </a></li>
-            <li><a href="#">
+            </a>
+          </li>
+          <li><a href="#">
               <span><i class="flaticon-school"></i></span>
               <span class="name">Health Reseach Institutions</span>
-              </a></li>
-          </ul>
-          <div class="more-link">
-            <a href="#"> Browse all categories </a>
-          </div>
+            </a></li>
+        </ul>
+        <div class="more-link">
+          <a href="#"> Browse all categories </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="bg-light publications">
-      <div class="container">
-        <h2>latest documents</h2>
-        <div class="content">
-          <ul class="latest-pub">
-            <li>
-              <div class="pdfpreview" id="pdfpreview-1082">
-                <span class="pdfpreview-image-wrapper">
-                  <img alt="" title="" class="img-fluid" src="images/Disease-Surveillance-2012.jpg" loading="lazy" typeof="Image" width="724" height="1024" />
-                </span>
-              </div>
-              <h5>
-                <a href="#" class="text-dark"> National population and housing census 2014 revised edition </a>
-              </h5>
-              <div class="latest-pub-date mb-2">Date of publication: <time datetime="00Z" class="datetime">23 Jul, 2022</time></div>
-              <div class="latest-pub-links">
-                <a href="#" class="text-dark btn view-btn">
-                  <span>view details</span>
-                  <span> <i class="flaticon-eye"></i> </span>
-                </a>
-
-                <a href="#" title="file" class="btn download-btn">
-                  <span>download </span>
-                  <span><i class="flaticon-down-arrow-1 position-relative"></i></span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="pdfpreview" id="pdfpreview-1082">
-                <span class="pdfpreview-image-wrapper">
-                  <img alt="" title="" class="img-fluid" src="images/National-Population-Census-Provisional-results-2014.jpg" loading="lazy" typeof="Image" width="769" height="1024" />
-                </span>
-              </div>
-              <h5>
-                <a href="#" class="text-dark"> National Technical Guidelines for Integrated Disease Surveillance and Response </a>
-              </h5>
-              <div class="latest-pub-date mb-2">Date of publication: <time datetime="00Z" class="datetime">29 Dec, 2012</time></div>
-              <div class="latest-pub-links">
-                <a href="#" class="text-dark btn view-btn">
-                  <span>view details</span>
-                  <span> <i class="flaticon-eye"></i> </span>
-                </a>
-
-                <a href="#" title="file" class="btn download-btn">
-                  <span>download </span>
-                  <span><i class="flaticon-down-arrow-1 position-relative"></i></span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="pdfpreview" id="pdfpreview-1082">
-                <span class="pdfpreview-image-wrapper">
-                  <img alt="" title="" class="pdfpreview-file img-fluid" src="images/hrisug.jpg" loading="lazy" typeof="Image" width="724" height="1024" />
-                </span>
-              </div>
-              <h5>
-                <a href="#" class="text-dark"> Health Planning Guidelines : Supplement To the Local Government Planning Process </a>
-              </h5>
-              <div class="latest-pub-date mb-2">Date of publication: <time datetime="00Z" class="datetime">29 Jun, 2007</time></div>
-              <div class="latest-pub-links">
-                <a href="#" class="text-dark btn view-btn">
-                  <span>view details</span>
-                  <span> <i class="flaticon-eye"></i> </span>
-                </a>
-
-                <a href="#" title="file" class="btn download-btn">
-                  <span>download </span>
-                  <span><i class="flaticon-down-arrow-1 position-relative"></i></span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="pdfpreview" id="pdfpreview-1082">
-                <span class="pdfpreview-image-wrapper">
-                  <img alt="" title="" class="pdfpreview-file img-fluid" src="images/Malaria.jpg" loading="lazy" typeof="Image" width="724" height="1024" />
-                </span>
-              </div>
-              <h5>
-                <a href="#" class="text-dark"> National Supervision Guidelines for Health Services </a>
-              </h5>
-              <div class="latest-pub-date mb-2">Date of publication: <time datetime="00Z" class="datetime">26 Jul, 2000</time></div>
-              <div class="latest-pub-links">
-                <a href="#" class="text-dark btn view-btn">
-                  <span>view details</span>
-                  <span> <i class="flaticon-eye"></i> </span>
-                </a>
-
-                <a href="#" title="file" class="btn download-btn">
-                  <span>download </span>
-                  <span><i class="flaticon-down-arrow-1 position-relative"></i></span>
-                </a>
-              </div>
-            </li>
-          </ul>
-          <div class="more-link">
-            <a href="#"> view all publications</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="dev-partners">
-      <div class="container">
-        <h2 class="text-secondary">Development partners</h2>
-        <div class="content">
-          <ul>
-            <li>
-              <a href="#"><img loading="lazy" src="images/who.jpg" alt="World Health Organization" title="World Health Organization" typeof="foaf:Image" width="500" height="200" /></a>
-            </li>
-            <li>
-              <a href="#"><img loading="lazy" src="images/usaid.jpg" alt="USAID" title="USAID" typeof="foaf:Image" width="500" height="200" /></a>
-            </li>
-            <li>
-              <a href="#"><img loading="lazy" src="images/worldbank.jpg" alt="World Bank" title="World Bank" typeof="foaf:Image" width="500" height="200" /></a>
-            </li>
-            <li>
-              <a href="#"><img loading="lazy" src="images/urc.jpg" alt="URC" title="URC" typeof="foaf:Image" width="500" height="200" /></a>
-            </li>
-            <li>
-              <a href="#">
-                <img loading="lazy" src="images/fhi360.png" alt="URC" title="URC" typeof="foaf:Image" width="500" height="200" /></a>
+  <section class="bg-light publications">
+    <div class="container">
+      <h2>latest documents</h2>
+      <div class="content">
+        <ul class="latest-pub">
+          <li>
+            <div class="pdfpreview" id="pdfpreview-1082">
+              <span class="pdfpreview-image-wrapper">
+                <img alt="" title="" class="img-fluid" src="images/Disease-Surveillance-2012.jpg" loading="lazy"
+                  typeof="Image" width="724" height="1024" />
+              </span>
+            </div>
+            <h5>
+              <a href="#" class="text-dark"> National population and housing census 2014 revised edition </a>
+            </h5>
+            <div class="latest-pub-date mb-2">Date of publication: <time datetime="00Z" class="datetime">23 Jul,
+                2022</time></div>
+            <div class="latest-pub-links">
+              <a href="#" class="text-dark btn view-btn">
+                <span>view details</span>
+                <span> <i class="flaticon-eye"></i> </span>
               </a>
-            </li>
-          </ul>
+
+              <a href="#" title="file" class="btn download-btn">
+                <span>download </span>
+                <span><i class="flaticon-down-arrow-1 position-relative"></i></span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="pdfpreview" id="pdfpreview-1082">
+              <span class="pdfpreview-image-wrapper">
+                <img alt="" title="" class="img-fluid"
+                  src="images/National-Population-Census-Provisional-results-2014.jpg" loading="lazy" typeof="Image"
+                  width="769" height="1024" />
+              </span>
+            </div>
+            <h5>
+              <a href="#" class="text-dark"> National Technical Guidelines for Integrated Disease Surveillance and
+                Response </a>
+            </h5>
+            <div class="latest-pub-date mb-2">Date of publication: <time datetime="00Z" class="datetime">29 Dec,
+                2012</time></div>
+            <div class="latest-pub-links">
+              <a href="#" class="text-dark btn view-btn">
+                <span>view details</span>
+                <span> <i class="flaticon-eye"></i> </span>
+              </a>
+
+              <a href="#" title="file" class="btn download-btn">
+                <span>download </span>
+                <span><i class="flaticon-down-arrow-1 position-relative"></i></span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="pdfpreview" id="pdfpreview-1082">
+              <span class="pdfpreview-image-wrapper">
+                <img alt="" title="" class="pdfpreview-file img-fluid" src="images/hrisug.jpg" loading="lazy"
+                  typeof="Image" width="724" height="1024" />
+              </span>
+            </div>
+            <h5>
+              <a href="#" class="text-dark"> Health Planning Guidelines : Supplement To the Local Government Planning
+                Process </a>
+            </h5>
+            <div class="latest-pub-date mb-2">Date of publication: <time datetime="00Z" class="datetime">29 Jun,
+                2007</time></div>
+            <div class="latest-pub-links">
+              <a href="#" class="text-dark btn view-btn">
+                <span>view details</span>
+                <span> <i class="flaticon-eye"></i> </span>
+              </a>
+
+              <a href="#" title="file" class="btn download-btn">
+                <span>download </span>
+                <span><i class="flaticon-down-arrow-1 position-relative"></i></span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="pdfpreview" id="pdfpreview-1082">
+              <span class="pdfpreview-image-wrapper">
+                <img alt="" title="" class="pdfpreview-file img-fluid" src="images/Malaria.jpg" loading="lazy"
+                  typeof="Image" width="724" height="1024" />
+              </span>
+            </div>
+            <h5>
+              <a href="#" class="text-dark"> National Supervision Guidelines for Health Services </a>
+            </h5>
+            <div class="latest-pub-date mb-2">Date of publication: <time datetime="00Z" class="datetime">26 Jul,
+                2000</time></div>
+            <div class="latest-pub-links">
+              <a href="#" class="text-dark btn view-btn">
+                <span>view details</span>
+                <span> <i class="flaticon-eye"></i> </span>
+              </a>
+
+              <a href="#" title="file" class="btn download-btn">
+                <span>download </span>
+                <span><i class="flaticon-down-arrow-1 position-relative"></i></span>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="more-link">
+          <a href="#"> view all publications</a>
         </div>
       </div>
-    </section>
-    <footer>
+    </div>
+  </section>
+
+  <section class="dev-partners">
+    <div class="container">
+      <h2 class="text-secondary">Development partners</h2>
+      <div class="content">
+        <ul>
+          <li>
+            <a href="#"><img loading="lazy" src="images/who.jpg" alt="World Health Organization"
+                title="World Health Organization" typeof="foaf:Image" width="500" height="200" /></a>
+          </li>
+          <li>
+            <a href="#"><img loading="lazy" src="images/usaid.jpg" alt="USAID" title="USAID" typeof="foaf:Image"
+                width="500" height="200" /></a>
+          </li>
+          <li>
+            <a href="#"><img loading="lazy" src="images/worldbank.jpg" alt="World Bank" title="World Bank"
+                typeof="foaf:Image" width="500" height="200" /></a>
+          </li>
+          <li>
+            <a href="#"><img loading="lazy" src="images/urc.jpg" alt="URC" title="URC" typeof="foaf:Image" width="500"
+                height="200" /></a>
+          </li>
+          <li>
+            <a href="#">
+              <img loading="lazy" src="images/fhi360.png" alt="URC" title="URC" typeof="foaf:Image" width="500"
+                height="200" /></a>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer-inner">
+        <div class="col-md-6 col-lg-3">
+          <section class="footer-contacts">
+            <div class="footer-logo">
+              <img alt="kmp" src="images/small-logo.png" width="100" height="107" loading="lazy" />
+              <div class="moh">Ministry of Health
+                <br>Knowledge Management Portal
+              </div>
+              <div class="uganda">Republic of Uganda</div>
+            </div>
+            <ul class="pt-3 mt-3 fs-12">
+              <li class="mb-2">Plot 6 Lourdel Rd, Nakasero</li>
+              <li class="mb-2">Toll Free: 0800-100-066,<br> Office: +256 417 712260</li>
+              <li class="mb-2">P.O. Box 7272 Kampala Uganda</li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-md-3 col-lg-2 offset-lg-1">
+          <section>
+            <h3>Quick Links</h3>
+            <ul class="clearfix nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link nav-link--new-web-about-knowledge-management-portal" title="About Us"
+                  data-drupal-link-system-path="node/1">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link nav-link--new-web-categories" title="Categories"
+                  data-drupal-link-system-path="categories">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link nav-link--new-web-publications" title="Publications"
+                  data-drupal-link-system-path="publications">Publications</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link nav-link--new-web-multimedia" title="Multimedia"
+                  data-drupal-link-system-path="node/76">Multimedia</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link nav-link--new-web-frequently-asked-questions-faqs" title="FAQ">FAQ</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <section>
+            <h3>Information</h3>
+
+            <ul class="clearfix nav">
+              <li class="nav-item">
+                <a href="https://www.health.go.ug" class="nav-link nav-link-https--wwwhealthgoug" target="_blank"
+                  title="Ministry website">Ministry website</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link nav-link--new-web-" title="Support Center"
+                  data-drupal-link-system-path="&lt;front&gt;">Support Center</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link nav-link--new-web-" title="Terms of use"
+                  data-drupal-link-system-path="&lt;front&gt;">Terms of use</a>
+              </li>
+            </ul>
+
+            <div class="social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></i></a>
+            </div>
+
+          </section>
+
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <section>
+            <div
+              class="simplenews-subscriptions-block-47d10aa6-fc70-4e25-8948-929d2c8f1934 simplenews-subscriber-form block block-simplenews block-simplenews-subscription-block subscribe_now"
+              data-drupal-selector="simplenews-subscriptions-block-47d10aa6-fc70-4e25-8948-929d2c8f1934"
+              id="block-simplenewssubscription">
+
+              <h3>Join our Mailing list</h3>
+
+              <div class="content">
+
+                <form action="/new/web/" method="post"
+                  id="simplenews-subscriptions-block-47d10aa6-fc70-4e25-8948-929d2c8f1934" accept-charset="UTF-8"
+                  data-once="form-updated" data-drupal-form-fields="edit-mail-0-value,edit-submit">
+                  <div
+                    class="field--type-simplenews-subscription field--name-subscriptions field--widget-simplenews-subscription-select js-form-wrapper form-wrapper mb-3"
+                    data-drupal-selector="edit-subscriptions-wrapper" id="edit-subscriptions-wrapper"></div>
+
+
+
+
+
+
+                  <div id="edit-message"
+                    class="js-form-item js-form-type-item form-type-item js-form-item-message form-item-message form-no-label mb-3">
+                    Be notified about the most recent publications
+                  </div>
+                  <input autocomplete="off" data-drupal-selector="form-asca56opyzl-xwswch8jxoi2nkpdhpd1o9jpyxbs-rq"
+                    type="hidden" name="form_build_id" value="form-aSCA56oPyZL-XWsWch8jXOI2NkpDHPD1O9jPYxbs-rQ"
+                    class="form-control">
+                  <input data-drupal-selector="edit-simplenews-subscriptions-block-47d10aa6-fc70-4e25-8948-929d2c8f1934"
+                    type="hidden" name="form_id"
+                    value="simplenews_subscriptions_block_47d10aa6-fc70-4e25-8948-929d2c8f1934" class="form-control">
+
+                  <div
+                    class="field--type-email field--name-mail field--widget-email-default js-form-wrapper form-wrapper mb-3"
+                    data-drupal-selector="edit-mail-wrapper" id="edit-mail-wrapper">
+
+                    <div
+                      class="js-form-item js-form-type-email form-type-email js-form-item-mail-0-value form-item-mail-0-value mb-3">
+                      <label for="edit-mail-0-value" class="js-form-required form-required">Email</label>
+                      <input data-drupal-selector="edit-mail-0-value" aria-describedby="edit-mail-0-value--description"
+                        type="email" id="edit-mail-0-value" name="mail[0][value]" value="" size="60" maxlength="254"
+                        placeholder="" class="form-email required form-control rounded-0" required="required"
+                        aria-required="true">
+                      <small id="edit-mail-0-value--description" class="description text-muted">
+                        The subscriber's email address.
+                      </small>
+                    </div>
+
+                  </div>
+
+              </div>
+              <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper mb-3"
+                id="edit-actions"><button data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op"
+                  value="Subscribe"
+                  class="button button--primary js-form-submit form-submit btn btn-primary rounded-0 dark-blue border-0">Subscribe</button>
+              </div>
+
+              </form>
+          </section>
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+    <div class="credits-wrapper">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <section class="footer-contacts">
-              <div class="footer-logo">
-                  <img alt="kmp" src="images/small-logo.png" width="100" height="107" loading="lazy" />
-                  <div class="moh">Ministry of Health 
-                    <br>Knowledge Management Portal</div>
-                  <div class="uganda">Republic of Uganda</div>
-              </div>
-              <ul class="pt-3 mt-3 fs-12"><li class="mb-2">Plot 6 Lourdel Rd, Nakasero</li>
-                <li class="mb-2">Toll Free: 0800-100-066,<br> Office: +256 417 712260</li>
-                <li class="mb-2">P.O. Box 7272 Kampala Uganda</li>
-              </ul>
-            </section>
-          </div>
-          <div class="col-md-3 col-lg-2 offset-lg-1">
-            <section>
-              <h3>Quick Links</h3>
-                      <ul class="clearfix nav">
-                        <li class="nav-item">
-                          <a href="#" class="nav-link nav-link--new-web-about-knowledge-management-portal" title="About Us" data-drupal-link-system-path="node/1">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#" class="nav-link nav-link--new-web-categories" title="Categories" data-drupal-link-system-path="categories">Categories</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#" class="nav-link nav-link--new-web-publications" title="Publications" data-drupal-link-system-path="publications">Publications</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#" class="nav-link nav-link--new-web-multimedia" title="Multimedia" data-drupal-link-system-path="node/76">Multimedia</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#" class="nav-link nav-link--new-web-frequently-asked-questions-faqs" title="FAQ">FAQ</a>
-                        </li>
-                      </ul>
-            </section>
-          </div>
-          <div class="col-md-3 col-lg-2">
-            <section>
-              <h3>Information</h3>
-
-              <ul class="clearfix nav">
-                <li class="nav-item">
-                  <a href="https://www.health.go.ug" class="nav-link nav-link-https--wwwhealthgoug" target="_blank" title="Ministry website">Ministry website</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link nav-link--new-web-" title="Support Center" data-drupal-link-system-path="&lt;front&gt;">Support Center</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link nav-link--new-web-" title="Terms of use" data-drupal-link-system-path="&lt;front&gt;">Terms of use</a>
-                </li>
-              </ul>
-
-              <div class="social">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></i></a>
-              </div>
-              
-            </section>
-         
-          </div>
-          <div class="col-md-12 col-lg-4">
-            <section>
-              <div class="simplenews-subscriptions-block-47d10aa6-fc70-4e25-8948-929d2c8f1934 simplenews-subscriber-form block block-simplenews block-simplenews-subscription-block subscribe_now" data-drupal-selector="simplenews-subscriptions-block-47d10aa6-fc70-4e25-8948-929d2c8f1934" id="block-simplenewssubscription">
-  
-                <h3>Join our Mailing list</h3>
-              
-                <div class="content">
-                
-          <form action="/new/web/" method="post" id="simplenews-subscriptions-block-47d10aa6-fc70-4e25-8948-929d2c8f1934" accept-charset="UTF-8" data-once="form-updated" data-drupal-form-fields="edit-mail-0-value,edit-submit">
-            <div class="field--type-simplenews-subscription field--name-subscriptions field--widget-simplenews-subscription-select js-form-wrapper form-wrapper mb-3" data-drupal-selector="edit-subscriptions-wrapper" id="edit-subscriptions-wrapper"></div>
-          
-          
-          
-          
-          
-          
-            <div id="edit-message" class="js-form-item js-form-type-item form-type-item js-form-item-message form-item-message form-no-label mb-3">
-                              Be notified about the most recent publications
-                                </div>
-          <input autocomplete="off" data-drupal-selector="form-asca56opyzl-xwswch8jxoi2nkpdhpd1o9jpyxbs-rq" type="hidden" name="form_build_id" value="form-aSCA56oPyZL-XWsWch8jXOI2NkpDHPD1O9jPYxbs-rQ" class="form-control">
-          <input data-drupal-selector="edit-simplenews-subscriptions-block-47d10aa6-fc70-4e25-8948-929d2c8f1934" type="hidden" name="form_id" value="simplenews_subscriptions_block_47d10aa6-fc70-4e25-8948-929d2c8f1934" class="form-control">
-            
-              <div class="field--type-email field--name-mail field--widget-email-default js-form-wrapper form-wrapper mb-3" data-drupal-selector="edit-mail-wrapper" id="edit-mail-wrapper">      
-                         
-                       <div class="js-form-item js-form-type-email form-type-email js-form-item-mail-0-value form-item-mail-0-value mb-3">
-                    <label for="edit-mail-0-value" class="js-form-required form-required">Email</label>
-                              <input data-drupal-selector="edit-mail-0-value" aria-describedby="edit-mail-0-value--description" type="email" id="edit-mail-0-value" name="mail[0][value]" value="" size="60" maxlength="254" placeholder="" class="form-email required form-control rounded-0" required="required" aria-required="true">
-                                    <small id="edit-mail-0-value--description" class="description text-muted">
-                  The subscriber's email address.
-                </small>
-                </div>
-          
-            </div>
-          
-            </div>
-          <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper mb-3" id="edit-actions"><button data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Subscribe" class="button button--primary js-form-submit form-submit btn btn-primary rounded-0 dark-blue border-0">Subscribe</button></div>
-          
-          </form>
-            </section>
-            
-            </div>
-          </div>
-
-          </div>
-        </div>
+        <p>© Copyright 2022 | Ministry of Health - Republic of Uganda | All Rights Reserved.</p>
       </div>
-      <div class="credits-wrapper">
-        <div class="container">
-          <p>© Copyright 2022 | Ministry of Health - Republic of Uganda | All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

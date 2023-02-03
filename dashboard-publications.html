@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Published publications</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/dashboard-styles.css">
+    <link rel="stylesheet" href="css/kmp-styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard-wrapper">
+        <header class="navbar navbar-dark sticky-top flex-md-nowrap shadow dash_nav">
+            <a href="index.html" title="Home" rel="home" class="navbar-brand col-9 col-md-4">
+                <img src="images/kpm-black-logo.png" alt="Home" class="img-fluid">
+            </a>
+
+            <div class="navbar-dashboard">
+                <div class="nav-item text-nowrap">
+                    <div class="admin-dropdown-menu">
+                        <div class="dropdown user_menu">
+                            <a class="btn btn-secondary dropdown-toggle rounded-3 bg-white text-dark" href="#"
+                                role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hi, Vincent
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-sm-end rounded-0" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="bi bi-grid-3x3-gap-fill"></i>Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark-plus"></i>Create
+                                        publication</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-person-square"></i>View
+                                        profile</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-square"></i>Edit
+                                        profile</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle"></i>Help</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-in-right"></i>Logout</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-up-right"></i>MOH
+                                        Website</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light dashboard-sidebar">
+                    <div class="position-sticky pt-3">
+
+                        <aside class="section" role="complementary">
+                            <ul class="clearfix acc">
+                                <li class="nav-item menu-item--active-trail"><a href="dashboard.html"
+                                        class="bi bi-speedometer2 nav-link active nav-link- acc__title-new-web-dashboard is-active">Dashboard</a>
+                                </li>
+                                <li class="nav-item menu-item--expanded acc__card">
+                                    <span class="bi bi-view-list nav-link nav-link- acc__title" title="manage">
+                                        Publications
+                                    </span>
+                                    <ul class="menu acc__panel">
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-file-earmark-plus nav-link">Create</a></li>
+                                        <li class="nav-item"><a href="#" class="bi bi-book nav-link">Published</a></li>
+                                        <li class="nav-item"><a href="#" class="bi bi-book-half nav-link">Drafts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item menu-item--expanded acc__card">
+                                    <span class="bi bi-plus-square nav-link nav-link- acc__title" title="manage">
+                                        Add Content
+                                    </span>
+                                    <ul class="menu acc__panel">
+                                        <li class="nav-item"><a href="#" class="bi bi-node-plus nav-link">Basic
+                                                page</a></li>
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-cloud-plus nav-link">FAQs</a></li>
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-newspaper nav-link">Newsletter</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item menu-item--expanded acc__card">
+                                    <span class="bi bi-folder nav-link nav-link- acc__title" title="manage">
+                                        Categories
+                                    </span>
+                                    <ul class="menu acc__panel">
+                                        <li class="nav-item"><a href="#" class="bi bi-file-earmark-plus nav-link">Add
+                                                term</a></li>
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-file-earmark-plus nav-link">Manage</a></li>
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-file-earmark-plus nav-link">Publications</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item menu-item--expanded acc__card">
+                                    <span class="bi bi-people nav-link nav-link- acc__title" title="manage">
+                                        Manage users
+                                    </span>
+                                    <ul class="menu acc__panel">
+                                        <li class="nav-item"><a href="#" class="bi bi-file-earmark-plus nav-link">All
+                                                users</a></li>
+                                        <li class="nav-item"><a href="#" class="bi bi-file-earmark-plus nav-link">Add
+                                                Users</a></li>
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-file-earmark-plus nav-link">Publications</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </aside>
+
+                    </div>
+                </nav>
+
+                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                    <div id="main" class="container">
+                        <nav role="navigation" aria-label="breadcrumb" class="py-3 pb-lg-5">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/">Home</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    Dashboard
+                                </li>
+                            </ol>
+                        </nav>
+
+                        <section class="tables-wrapper mt-5">
+                            <div class="view-filters">
+                                <form class="views-exposed-form" data-drupal-selector="views-exposed-form-dashboard-page-2" action="/new/web/dashboard/publications" method="get" id="views-exposed-form-dashboard-page-2" accept-charset="UTF-8" data-once="form-updated exposed-form" data-drupal-form-fields="edit-title,edit-field-categories-target-id">
+                                    <div class="form-row">
+                                        <div class="js-form-item js-form-type-textfield form-type-textfield js-form-item-title form-item-title mb-3">
+                                            <label for="edit-title">Title</label>
+                                            <input data-drupal-selector="edit-title" type="text" id="edit-title" name="title" value="" size="30" maxlength="128" class="form-control rounded-0">
+                                        </div>
+                                        <div class="js-form-item js-form-type-select form-type-select js-form-item-field-categories-target-id form-item-field-categories-target-id mb-3">
+                                        <label for="edit-field-categories-target-id">Categories</label>
+
+                                        <div class="shs-container"><div class="shs-field-container" data-shs-delta="0"><div class="shs-widget-container" data-shs-level="0"><label id="edit-field-categories-target-id-shs-0-0-label" class="visually-hidden"></label><select id="edit-field-categories-target-id-shs-0-0" aria-labelledby="edit-field-categories-target-id-shs-0-0-label" class="shs-select form-select form-element form-element--type-select" style=""><option value="183" class="has-children">Communicable disease</option><option value="195" class="has-children">Community Health</option><option value="210" class="has-children">Education</option><option value="242" class="has-children">Health information Systems</option><option value="217" class="has-children">Health Infrastructure</option><option value="227" class="has-children">Health Research Institutions</option><option value="237" class="has-children">Health System Financing</option><option value="248" class="has-children">Human Resources for Health</option><option value="257" class="has-children">Leadership and Governance</option><option value="268" class="has-children">Medical Products &amp; Technologies</option><option value="277" class="has-children">Mental Health Diseases</option><option value="287" class="has-children">Monitoring and Evaluation</option><option value="294" class="has-children">Neglected Tropical Diseases</option><option value="303" class="has-children">Non Communicable Diseases</option><option value="312" class="has-children">Professional Councils</option><option value="318" class="has-children">Sexual and Reproductive Health</option><option value="326" class="has-children">Uganda Service Commissions</option><option value="332" class="has-children">Waterborne Diseases</option><option value="179" class="has-children">Clinical Services</option><option value="All">- Any -</option></select></div></div></div><select class="shs-enabled form-select shs-processed hidden" data-shs-selector="shs-field-categories" data-drupal-selector="edit-field-categories-target-id" id="edit-field-categories-target-id" name="field_categories_target_id"><option value="All" selected="selected">- Any -</option><option value="319">Abortions</option><option value="211">Academic Papers</option><option value="258">Administration and Management</option><option value="193">Adolescent health</option><option value="313">Allied Health Professional Council</option><option value="333">Amoebiasis Giardiasis</option><option value="288">Annual / Quarterly Performance Reports</option><option value="304">Asthma</option><option value="249">Attrition</option><option value="238">Audits / Budget</option><option value="280">Autism</option><option value="196">Breast Feeding</option><option value="269">Chemicals / Pesticides</option><option value="183">Communicable disease</option><option value="243">DHIS2 / MTrack</option><option value="295">Dracunculiasis</option><option value="325">Education Service Commission</option><option value="218">Emergency Medical Services</option><option value="228">Joint Medical Stores</option><option value="180">Multi-sectoral coordination</option><option value="320">Adolescent Health</option><option value="279">Anxiety</option><option value="194">Breast Feeding</option><option value="305">Cancer</option><option value="334">Cholera</option><option value="250">Continuing Professional Development</option><option value="239">Cost Sharing</option><option value="198">COVID-19 Research</option><option value="259">Decentralization</option><option value="219">Equipment and Supplies Inventory</option><option value="328">Health Service Commission</option><option value="244">HMIS</option><option value="213">Internship Reports</option><option value="270">Laboratory Supplies and Consumables</option><option value="296">Leishmaniasis</option><option value="229">National Chemothepeutics Research Institute</option><option value="181">Occupational health</option><option value="314">Pharmacy Council</option><option value="289">Population</option><option value="278">Alcoholism</option><option value="197">Child Health / School Health</option><option value="306">Diabetes</option><option value="335">Diarrhea</option><option value="212">Dissertations / Thesis</option><option value="184">Ebola</option><option value="321">Family Planning</option><option value="220">General Hospitals</option><option value="260">Governance</option><option value="240">Health Financing / Accounting</option><option value="245">IHRIS</option><option value="329">Judicial Service Commission</option><option value="272">Medicines</option><option value="230">National Drug Authority</option><option value="182">Palliative care</option><option value="251">Performance Management</option><option value="290">Quality Assurance / Improvement</option><option value="315">Registration and Licensing</option><option value="297">River Blindness</option><option value="281">Bipolar Disorder</option><option value="199">Disability and Rehabilitation</option><option value="336">Dysentery</option><option value="189">Eye Disease</option><option value="322">Gender Based Violence</option><option value="261">Guidelines</option><option value="221">Health Centres IV, III and II</option><option value="241">Health Insurance</option><option value="307">Heart Disease</option><option value="246">LMIS</option><option value="271">Medicinal Plants</option><option value="231">National Medical Stores</option><option value="214">Proposals</option><option value="252">Public Relations</option><option value="330">Public Service Commission</option><option value="298">Scabies</option><option value="291">Statistics</option><option value="316">Uganda Medical and Professional Council</option><option value="282">Dementia</option><option value="200">Disease Survielance / Outbreaks</option><option value="337">Filariasis</option><option value="222">Health Facility Inventory</option><option value="191">Hepatitis B</option><option value="262">Human Rights</option><option value="308">Hypertension and stroke</option><option value="323">Maternal Health</option><option value="273">Narcotics</option><option value="253">Recruitment and Deployment</option><option value="247">RX Solution</option><option value="299">Schistosomiasis</option><option value="292">Surveys</option><option value="215">Training Adverts / Courses</option><option value="331">Uganda AIDS Commission</option><option value="232">Uganda Blood Transfusion</option><option value="317">Uganda Nurses and Midwives Council</option><option value="283">Depression</option><option value="201">Environmental Health and Sanitation</option><option value="190">HIV/AIDS</option><option value="309">Kidney Disease</option><option value="263">Laws and Regulations</option><option value="223">National Mental Referral Hospital</option><option value="274">Pharmaceuticals and Drugs</option><option value="254">Retention and Motivation</option><option value="338">Salmonella</option><option value="300">Trachoma</option><option value="324">Traditional Birth Attendants</option><option value="216">Training Curriculum’s</option><option value="233">Uganda Cancer Institute</option><option value="293">Work Plans</option><option value="202">Food and Nutrition</option><option value="192">Leprosy</option><option value="264">Local Government</option><option value="310">Lung Disease</option><option value="284">Mania</option><option value="224">National Referral Hospital</option><option value="275">Refrigeration / Cold Chain Services</option><option value="255">Training / Scholarship</option><option value="301">Trypanosomiasis</option><option value="339">Typhoid</option><option value="234">Uganda Heart Institute</option><option value="203">Health Education</option><option value="185">Malaria</option><option value="311">Obesity</option><option value="225">Physical Infrastructure</option><option value="265">Policy Documents</option><option value="285">Schizophrenia</option><option value="235">Uganda National Health Research Organisation</option><option value="276">Vaccines</option><option value="256">WISN</option><option value="302">Yaws</option><option value="204">Immunization</option><option value="266">Poverty</option><option value="226">Regional Referral Hospitals</option><option value="286">Stress</option><option value="236">Uganda Virus Research Institute</option><option value="205">Nursing</option><option value="186">Rabies</option><option value="267">Refugees</option><option value="206">Oral Health</option><option value="187">Sexually Transmitted Diseases</option><option value="208">Public Health</option><option value="188">Tuberculosis</option><option value="207">Primary Health Care</option><option value="209">Veterinary Public Health</option><option value="195">Community Health</option><option value="210">Education</option><option value="242">Health information Systems</option><option value="217">Health Infrastructure</option><option value="227">Health Research Institutions</option><option value="237">Health System Financing</option><option value="248">Human Resources for Health</option><option value="257">Leadership and Governance</option><option value="268">Medical Products &amp; Technologies</option><option value="277">Mental Health Diseases</option><option value="287">Monitoring and Evaluation</option><option value="294">Neglected Tropical Diseases</option><option value="303">Non Communicable Diseases</option><option value="312">Professional Councils</option><option value="318">Sexual and Reproductive Health</option><option value="326">Uganda Service Commissions</option><option value="332">Waterborne Diseases</option><option value="179">Clinical Services</option></select></div>
+                            
+                                        <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper mb-3" id="edit-actions">
+                                            <button data-drupal-selector="edit-submit-dashboard" type="submit" id="edit-submit-dashboard" value="Filter" class="button js-form-submit form-submit btn btn-primary rounded-0 dark-blue border-0">Filter</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <h2>Latest drafts</h2>
+                            <div class="draft-publications">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Posted By</th>
+                                            <th scope="col">Operations</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>Build Uganda Health Informatics Capacity (BUHIC) Program for Health
+                                                Professionals</td>
+                                            <td>Kmp2</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>National population and housing census 2014 revised edition</td>
+                                            <td>Kmp3</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>National Technical Guidelines for Integrated Disease Surveillance and Response</td>
+                                            <td>Kmpvince</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>Health Planning Guidelines : Supplement To the Local Government Planning Process</td>
+                                            <td>Wasswa</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>National Supervision Guidelines for Health Services</td>
+                                            <td>Vincent</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>National Technical Guidelines for Integrated Disease Surveillance and Response</td>
+                                            <td>Elizabethe</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>Health Planning Guidelines : Supplement To the Local Government Planning Process</td>
+                                            <td>Mbabazi</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                    </div>
+                </main>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js"> </script>
+
+
+
+</body>
+
+</html>

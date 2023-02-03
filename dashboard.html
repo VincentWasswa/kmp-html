@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/dashboard-styles.css">
+    <link rel="stylesheet" href="css/kmp-styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard-wrapper">
+        <header class="navbar navbar-dark sticky-top flex-md-nowrap shadow dash_nav">
+            <a href="index.html" title="Home" rel="home" class="navbar-brand col-9 col-md-4">
+                <img src="images/kpm-black-logo.png" alt="Home" class="img-fluid">
+            </a>
+
+            <div class="navbar-dashboard">
+                <div class="nav-item text-nowrap">
+                    <div class="admin-dropdown-menu">
+                        <div class="dropdown user_menu">
+                            <a class="btn btn-secondary dropdown-toggle rounded-3 bg-white text-dark" href="#"
+                                role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hi, Vincent
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-sm-end rounded-0" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="bi bi-grid-3x3-gap-fill"></i>Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark-plus"></i>Create
+                                        publication</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-person-square"></i>View
+                                        profile</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-square"></i>Edit
+                                        profile</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle"></i>Help</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-in-right"></i>Logout</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-up-right"></i>MOH
+                                        Website</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light dashboard-sidebar">
+                    <div class="position-sticky pt-3">
+
+                        <aside class="section" role="complementary">
+                            <ul class="clearfix acc">
+                                <li class="nav-item menu-item--active-trail"><a href="dashboard.html"
+                                        class="bi bi-speedometer2 nav-link active nav-link- acc__title-new-web-dashboard is-active">Dashboard</a>
+                                </li>
+                                <li class="nav-item menu-item--expanded acc__card">
+                                    <span class="bi bi-view-list nav-link nav-link- acc__title" title="manage">
+                                        Publications
+                                    </span>
+                                    <ul class="menu acc__panel">
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-file-earmark-plus nav-link">Create</a></li>
+                                        <li class="nav-item"><a href="dashboard-publications.html" class="bi bi-book nav-link">Published</a></li>
+                                        <li class="nav-item"><a href="#" class="bi bi-book-half nav-link">Drafts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item menu-item--expanded acc__card">
+                                    <span class="bi bi-plus-square nav-link nav-link- acc__title" title="manage">
+                                        Add Content
+                                    </span>
+                                    <ul class="menu acc__panel">
+                                        <li class="nav-item"><a href="#" class="bi bi-node-plus nav-link">Basic
+                                                page</a></li>
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-cloud-plus nav-link">FAQs</a></li>
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-newspaper nav-link">Newsletter</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item menu-item--expanded acc__card">
+                                    <span class="bi bi-folder nav-link nav-link- acc__title" title="manage">
+                                        Categories
+                                    </span>
+                                    <ul class="menu acc__panel">
+                                        <li class="nav-item"><a href="#" class="bi bi-file-earmark-plus nav-link">Add
+                                                term</a></li>
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-file-earmark-plus nav-link">Manage</a></li>
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-file-earmark-plus nav-link">Publications</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item menu-item--expanded acc__card">
+                                    <span class="bi bi-people nav-link nav-link- acc__title" title="manage">
+                                        Manage users
+                                    </span>
+                                    <ul class="menu acc__panel">
+                                        <li class="nav-item"><a href="#" class="bi bi-file-earmark-plus nav-link">All
+                                                users</a></li>
+                                        <li class="nav-item"><a href="#" class="bi bi-file-earmark-plus nav-link">Add
+                                                Users</a></li>
+                                        <li class="nav-item"><a href="#"
+                                                class="bi bi-file-earmark-plus nav-link">Publications</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </aside>
+
+                    </div>
+                </nav>
+
+                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                    <div id="main" class="container">
+                        <nav role="navigation" aria-label="breadcrumb" class="py-3 pb-lg-5">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/">Home</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    Dashboard
+                                </li>
+                            </ol>
+                        </nav>
+
+                        <div class="user-welcome-message p-lg-5 p-3 rounded mb-5">
+                            <div class="my-lg-3">
+                                <div class="fs-4 poppins-bold mb-3">Welcome back, Vincent!</div>
+                                <div class="w-75 mb-4">The Knowledge Management Portal is an online resource that
+                                    integrates health and health related information resources from the Ministry of
+                                    Health and beyond, to provide a single point of access to valuable information that
+                                    facilitates evidence based decision making.</div>
+                                <button class="btn"><a href="#"><i class="bi bi-file-earmark-plus"></i>Create
+                                        publication</a></button>
+                            </div>
+                        </div>
+
+                        <section class="statistics-wrapper">
+                            <ul class="row p-0">
+                                <div class="col-sm-6 col-lg-4 stats">
+                                    <div class="inner">
+                                        <span>
+                                            <h3>67</h3>
+                                            <p>Total number of publication</p>
+                                            <a href="dashboard-publications.html">View Publications</a>
+                                        </span>
+                                        <span class="material-icons">auto_awesome_motion</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 stats">
+                                    <div class="inner">
+                                        <span>
+                                            <h3>5</h3>
+                                            <p>Total number of drafts</p>
+                                            <a href="#">View drafts</a>
+                                        </span>
+                                        <span class="material-icons">drafts</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 stats">
+                                    <div class="inner">
+                                        <span>
+                                            <h3>6</h3>
+                                            <p>Number of users</p>
+                                            <a href="#">View Users</a>
+                                        </span>
+                                        <span class="material-icons">person</span>
+                                    </div>
+                                </div>
+                                <h5>Your Submission statistics</h5>
+                                <div class="col-sm-6 col-lg-4 stats">
+                                    <div class="inner">
+                                        <span>
+                                            <h3>120</h3>
+                                            <p>Your submitted publications</p>
+                                            <a href="#">Your Publications</a>
+                                        </span>
+                                        <span class="material-icons">description</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 stats">
+                                    <div class="inner">
+                                        <span>
+                                            <h3>3</h3>
+                                            <p>Your submittion under drafts</p>
+                                            <a href="#">View your drafs</a>
+                                        </span>
+                                        <span class="material-icons">content_paste</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 stats">
+                                    <div class="inner">
+                                        <span>
+                                            <h3>129</h3>
+                                            <p>Total published submissions</p>
+                                            <a href="#">View your pubs</a>
+                                        </span>
+                                        <span class="material-icons">assignment</span>
+                                    </div>
+                                </div>
+
+
+                            </ul>
+                        </section>
+
+                        <section class="tables-wrapper mt-5">
+                            <h2>Latest drafts</h2>
+                            <div class="draft-publications">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Posted By</th>
+                                            <th scope="col">Operations</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>Build Uganda Health Informatics Capacity (BUHIC) Program for Health
+                                                Professionals</td>
+                                            <td>Kmp2</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>National population and housing census 2014 revised edition</td>
+                                            <td>Kmp3</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>National Technical Guidelines for Integrated Disease Surveillance and Response</td>
+                                            <td>Kmpvince</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>Health Planning Guidelines : Supplement To the Local Government Planning Process</td>
+                                            <td>Wasswa</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>National Supervision Guidelines for Health Services</td>
+                                            <td>Vincent</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>National Technical Guidelines for Integrated Disease Surveillance and Response</td>
+                                            <td>Elizabethe</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hide-label">
+                                            <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                                            <td>Health Planning Guidelines : Supplement To the Local Government Planning Process</td>
+                                            <td>Mbabazi</td>
+                                            <td><span class="view-bttn" title="View"><a href="#" hreflang="en"><i class="bi bi-eye-fill"></i></a></span>
+                                                <span class="edit-btn" title="Edit"><a href="#" hreflang="en"><i class="bi bi-pencil-square"></i></a></span>
+                                                <span class="delete-btn" title="Delete"><a href="#" hreflang="en"><i class="bi bi-trash"></i></a></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                    </div>
+                </main>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js"> </script>
+
+
+
+</body>
+
+</html>

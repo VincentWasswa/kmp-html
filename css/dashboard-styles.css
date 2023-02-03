@@ -1,0 +1,421 @@
+.dashboard-wrapper header {
+  background: var(--bs-white);
+  padding: 20px 0;
+}
+@media (min-width: 480px) {
+  .dashboard-wrapper header .navbar-dashboard {
+    position: absolute;
+    right: 40px;
+  }
+}
+.dashboard-wrapper header .navbar-dashboard .btn {
+  display: block;
+  background: var(--water-blue-bg) !important;
+  padding: 12px 22px;
+  color: #fff !important;
+}
+.dashboard-wrapper header .navbar-dashboard .btn:focus {
+  box-shadow: none;
+}
+.dashboard-wrapper header .navbar-dashboard ul {
+  padding: 10px 10px;
+  box-shadow: -1px 10px 19px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.dashboard-wrapper header .navbar-dashboard ul li a {
+  font-size: 85%;
+}
+.dashboard-wrapper header .navbar-dashboard ul li a i {
+  position: relative;
+  left: -8px;
+}
+@media (min-width: 768px) {
+  .dashboard-wrapper .dashboard-sidebar {
+    position: fixed;
+    height: 100%;
+  }
+}
+.dashboard-wrapper .dashboard-sidebar ul {
+  list-style: none;
+  padding: 0 22px 0 10px;
+}
+.dashboard-wrapper .dashboard-sidebar ul li {
+  padding: 15px 0px;
+}
+.dashboard-wrapper .dashboard-sidebar ul li .nav-link {
+  padding: 0 0 0 22px;
+  position: relative;
+  color: var(--bs-black);
+  border-bottom: none;
+}
+.dashboard-wrapper .dashboard-sidebar ul li .nav-link::before {
+  left: 0;
+  position: absolute;
+  top: 4px;
+}
+.dashboard-wrapper .dashboard-sidebar ul li .nav-link::after {
+  right: 0;
+  left: auto;
+  border-right: 2px solid var(--bs-black);
+  border-bottom: 2px solid var(--bs-black);
+}
+.dashboard-wrapper .dashboard-sidebar ul ul {
+  margin-top: 12px;
+  background: transparent;
+  margin-left: 12px;
+  border-left: 2px solid #dbdbdb;
+}
+.dashboard-wrapper .dashboard-sidebar ul ul li {
+  padding: 10px 0 10px 10px;
+}
+.dashboard-wrapper .dashboard-sidebar ul ul li .nav-link {
+  margin: 0px;
+  padding: 0 0 0 22px;
+  font-size: 90%;
+  color: #464646;
+}
+.dashboard-wrapper .dashboard-sidebar ul ul li.menu-item--active-trail {
+  background: #eee;
+}
+.dashboard-wrapper .dashboard-sidebar .acc .acc__card.menu-item--active-trail .menu.acc__panel {
+  display: block;
+}
+.dashboard-wrapper .breadcrumb a {
+  color: var(--bs-breadcrumb-item-active-color);
+}
+.dashboard-wrapper .user-welcome-message {
+  background: rgba(17, 93, 164, 0.05) url(images/publications-welcome.png) no-repeat 100% 50% / 30%;
+}
+.dashboard-wrapper .user-welcome-message a {
+  background: var(--water-blue-bg);
+  color: #ffffff;
+  padding: 10px 30px 10px 35px;
+  border-radius: 12px;
+}
+.dashboard-wrapper .user-welcome-message a i {
+  position: relative;
+  left: -7px;
+}
+.dashboard-wrapper .statistics-wrapper h5 {
+  margin: 22px auto;
+}
+.dashboard-wrapper .statistics-wrapper .stats {
+  margin-bottom: 20px;
+}
+.dashboard-wrapper .statistics-wrapper .stats:nth-child(1) .inner {
+  background: #ffeee7;
+}
+.dashboard-wrapper .statistics-wrapper .stats:nth-child(2) .inner {
+  background: #fff1d7;
+}
+.dashboard-wrapper .statistics-wrapper .stats:nth-child(3) .inner {
+  background: #f1fceb;
+}
+.dashboard-wrapper .statistics-wrapper .stats:nth-child(5) .inner {
+  background: #e1eef9;
+}
+.dashboard-wrapper .statistics-wrapper .stats:nth-child(6) .inner {
+  background: #f1f1f1;
+}
+.dashboard-wrapper .statistics-wrapper .stats:nth-child(7) .inner {
+  background: #f6f9e1;
+}
+.dashboard-wrapper .statistics-wrapper .stats .inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px;
+  min-height: 146px;
+}
+.dashboard-wrapper .statistics-wrapper .stats .inner .material-icons {
+  font-size: 40px;
+  color: #424242;
+}
+.dashboard-wrapper .statistics-wrapper .stats .inner span h3 {
+  font-weight: 600;
+}
+.dashboard-wrapper .statistics-wrapper .stats .inner span p {
+  font-size: 85%;
+}
+.dashboard-wrapper .statistics-wrapper .stats .inner span a {
+  border: 1px solid #d9d9d9;
+  color: var(--bs-black);
+  padding: 7px 12px;
+  background: #fff;
+  font-size: 85%;
+  border-radius: 5px;
+}
+.dashboard-wrapper .title {
+  font-size: 140%;
+}
+.dashboard-wrapper .tables-wrapper table tr {
+  background: transparent;
+}
+.dashboard-wrapper .tables-wrapper table thead tr th {
+  color: var(--bs-black);
+}
+.dashboard-wrapper .tables-wrapper table tbody tr td .form-check {
+  margin-bottom: 0 !important;
+}
+.dashboard-wrapper .tables-wrapper table tbody tr td .form-check .form-check-input {
+  margin-left: 0;
+}
+.dashboard-wrapper .tables-wrapper table tbody tr td span a {
+  padding: 5px 11px;
+  border-radius: 9px;
+  color: #464646;
+  margin: 0 7px;
+}
+.dashboard-wrapper .tables-wrapper table tbody tr td .view-bttn a {
+  background: rgba(17, 93, 164, 0.2);
+}
+.dashboard-wrapper .tables-wrapper table tbody tr td .edit-btn a {
+  background: #ededed;
+}
+.dashboard-wrapper .tables-wrapper table tbody tr td .delete-btn a {
+  background: #f9dfb1;
+}
+.dashboard-wrapper .tables-wrapper h2 {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 140%;
+  margin: 15px 0px;
+}
+.dashboard-wrapper .tables-wrapper a {
+  color: var(--bs-black);
+}
+@media (min-width: 768px) {
+  .dashboard-wrapper .view-filters form .form-row,
+  .dashboard-wrapper .view-content form .form-row,
+  .dashboard-wrapper .view-filters .views-form .form-row,
+  .dashboard-wrapper .view-content .views-form .form-row,
+  .dashboard-wrapper .view-filters form .row,
+  .dashboard-wrapper .view-content form .row,
+  .dashboard-wrapper .view-filters .views-form .row,
+  .dashboard-wrapper .view-content .views-form .row,
+  .dashboard-wrapper .view-filters form #edit-header,
+  .dashboard-wrapper .view-content form #edit-header,
+  .dashboard-wrapper .view-filters .views-form #edit-header,
+  .dashboard-wrapper .view-content .views-form #edit-header,
+  .dashboard-wrapper .view-filters form .form-wrapper,
+  .dashboard-wrapper .view-content form .form-wrapper,
+  .dashboard-wrapper .view-filters .views-form .form-wrapper,
+  .dashboard-wrapper .view-content .views-form .form-wrapper {
+    gap: 0.5rem;
+    display: flex;
+  }
+}
+.dashboard-wrapper .view-filters form .form-row label,
+.dashboard-wrapper .view-content form .form-row label,
+.dashboard-wrapper .view-filters .views-form .form-row label,
+.dashboard-wrapper .view-content .views-form .form-row label,
+.dashboard-wrapper .view-filters form .row label,
+.dashboard-wrapper .view-content form .row label,
+.dashboard-wrapper .view-filters .views-form .row label,
+.dashboard-wrapper .view-content .views-form .row label,
+.dashboard-wrapper .view-filters form #edit-header label,
+.dashboard-wrapper .view-content form #edit-header label,
+.dashboard-wrapper .view-filters .views-form #edit-header label,
+.dashboard-wrapper .view-content .views-form #edit-header label,
+.dashboard-wrapper .view-filters form .form-wrapper label,
+.dashboard-wrapper .view-content form .form-wrapper label,
+.dashboard-wrapper .view-filters .views-form .form-wrapper label,
+.dashboard-wrapper .view-content .views-form .form-wrapper label {
+  color: #858585;
+  font-size: 75%;
+  margin: 0px;
+  padding: 0px;
+}
+.dashboard-wrapper .view-filters form .form-row input,
+.dashboard-wrapper .view-content form .form-row input,
+.dashboard-wrapper .view-filters .views-form .form-row input,
+.dashboard-wrapper .view-content .views-form .form-row input,
+.dashboard-wrapper .view-filters form .row input,
+.dashboard-wrapper .view-content form .row input,
+.dashboard-wrapper .view-filters .views-form .row input,
+.dashboard-wrapper .view-content .views-form .row input,
+.dashboard-wrapper .view-filters form #edit-header input,
+.dashboard-wrapper .view-content form #edit-header input,
+.dashboard-wrapper .view-filters .views-form #edit-header input,
+.dashboard-wrapper .view-content .views-form #edit-header input,
+.dashboard-wrapper .view-filters form .form-wrapper input,
+.dashboard-wrapper .view-content form .form-wrapper input,
+.dashboard-wrapper .view-filters .views-form .form-wrapper input,
+.dashboard-wrapper .view-content .views-form .form-wrapper input,
+.dashboard-wrapper .view-filters form .form-row select,
+.dashboard-wrapper .view-content form .form-row select,
+.dashboard-wrapper .view-filters .views-form .form-row select,
+.dashboard-wrapper .view-content .views-form .form-row select,
+.dashboard-wrapper .view-filters form .row select,
+.dashboard-wrapper .view-content form .row select,
+.dashboard-wrapper .view-filters .views-form .row select,
+.dashboard-wrapper .view-content .views-form .row select,
+.dashboard-wrapper .view-filters form #edit-header select,
+.dashboard-wrapper .view-content form #edit-header select,
+.dashboard-wrapper .view-filters .views-form #edit-header select,
+.dashboard-wrapper .view-content .views-form #edit-header select,
+.dashboard-wrapper .view-filters form .form-wrapper select,
+.dashboard-wrapper .view-content form .form-wrapper select,
+.dashboard-wrapper .view-filters .views-form .form-wrapper select,
+.dashboard-wrapper .view-content .views-form .form-wrapper select {
+  border-radius: 0px;
+  outline: none;
+  box-shadow: none;
+  font-size: 85%;
+}
+.dashboard-wrapper .view-filters form .form-row .form-actions,
+.dashboard-wrapper .view-content form .form-row .form-actions,
+.dashboard-wrapper .view-filters .views-form .form-row .form-actions,
+.dashboard-wrapper .view-content .views-form .form-row .form-actions,
+.dashboard-wrapper .view-filters form .row .form-actions,
+.dashboard-wrapper .view-content form .row .form-actions,
+.dashboard-wrapper .view-filters .views-form .row .form-actions,
+.dashboard-wrapper .view-content .views-form .row .form-actions,
+.dashboard-wrapper .view-filters form #edit-header .form-actions,
+.dashboard-wrapper .view-content form #edit-header .form-actions,
+.dashboard-wrapper .view-filters .views-form #edit-header .form-actions,
+.dashboard-wrapper .view-content .views-form #edit-header .form-actions,
+.dashboard-wrapper .view-filters form .form-wrapper .form-actions,
+.dashboard-wrapper .view-content form .form-wrapper .form-actions,
+.dashboard-wrapper .view-filters .views-form .form-wrapper .form-actions,
+.dashboard-wrapper .view-content .views-form .form-wrapper .form-actions {
+  display: flex;
+  border: 0px;
+  gap: 0.2rem;
+}
+.dashboard-wrapper .view-filters form .form-row .form-actions .form-submit,
+.dashboard-wrapper .view-content form .form-row .form-actions .form-submit,
+.dashboard-wrapper .view-filters .views-form .form-row .form-actions .form-submit,
+.dashboard-wrapper .view-content .views-form .form-row .form-actions .form-submit,
+.dashboard-wrapper .view-filters form .row .form-actions .form-submit,
+.dashboard-wrapper .view-content form .row .form-actions .form-submit,
+.dashboard-wrapper .view-filters .views-form .row .form-actions .form-submit,
+.dashboard-wrapper .view-content .views-form .row .form-actions .form-submit,
+.dashboard-wrapper .view-filters form #edit-header .form-actions .form-submit,
+.dashboard-wrapper .view-content form #edit-header .form-actions .form-submit,
+.dashboard-wrapper .view-filters .views-form #edit-header .form-actions .form-submit,
+.dashboard-wrapper .view-content .views-form #edit-header .form-actions .form-submit,
+.dashboard-wrapper .view-filters form .form-wrapper .form-actions .form-submit,
+.dashboard-wrapper .view-content form .form-wrapper .form-actions .form-submit,
+.dashboard-wrapper .view-filters .views-form .form-wrapper .form-actions .form-submit,
+.dashboard-wrapper .view-content .views-form .form-wrapper .form-actions .form-submit {
+  border: 0px;
+  color: #333333;
+  height: max-content;
+  padding: 4px 20px;
+  font-size: 85%;
+  font-weight: 500;
+}
+.dashboard-wrapper .view-filters form .form-row .form-actions .form-submit:hover,
+.dashboard-wrapper .view-content form .form-row .form-actions .form-submit:hover,
+.dashboard-wrapper .view-filters .views-form .form-row .form-actions .form-submit:hover,
+.dashboard-wrapper .view-content .views-form .form-row .form-actions .form-submit:hover,
+.dashboard-wrapper .view-filters form .row .form-actions .form-submit:hover,
+.dashboard-wrapper .view-content form .row .form-actions .form-submit:hover,
+.dashboard-wrapper .view-filters .views-form .row .form-actions .form-submit:hover,
+.dashboard-wrapper .view-content .views-form .row .form-actions .form-submit:hover,
+.dashboard-wrapper .view-filters form #edit-header .form-actions .form-submit:hover,
+.dashboard-wrapper .view-content form #edit-header .form-actions .form-submit:hover,
+.dashboard-wrapper .view-filters .views-form #edit-header .form-actions .form-submit:hover,
+.dashboard-wrapper .view-content .views-form #edit-header .form-actions .form-submit:hover,
+.dashboard-wrapper .view-filters form .form-wrapper .form-actions .form-submit:hover,
+.dashboard-wrapper .view-content form .form-wrapper .form-actions .form-submit:hover,
+.dashboard-wrapper .view-filters .views-form .form-wrapper .form-actions .form-submit:hover,
+.dashboard-wrapper .view-content .views-form .form-wrapper .form-actions .form-submit:hover {
+  color: var(--bs-white);
+}
+@media (min-width: 768px) {
+  .dashboard-wrapper .view-filters form .form-row .form-actions .form-submit,
+  .dashboard-wrapper .view-content form .form-row .form-actions .form-submit,
+  .dashboard-wrapper .view-filters .views-form .form-row .form-actions .form-submit,
+  .dashboard-wrapper .view-content .views-form .form-row .form-actions .form-submit,
+  .dashboard-wrapper .view-filters form .row .form-actions .form-submit,
+  .dashboard-wrapper .view-content form .row .form-actions .form-submit,
+  .dashboard-wrapper .view-filters .views-form .row .form-actions .form-submit,
+  .dashboard-wrapper .view-content .views-form .row .form-actions .form-submit,
+  .dashboard-wrapper .view-filters form #edit-header .form-actions .form-submit,
+  .dashboard-wrapper .view-content form #edit-header .form-actions .form-submit,
+  .dashboard-wrapper .view-filters .views-form #edit-header .form-actions .form-submit,
+  .dashboard-wrapper .view-content .views-form #edit-header .form-actions .form-submit,
+  .dashboard-wrapper .view-filters form .form-wrapper .form-actions .form-submit,
+  .dashboard-wrapper .view-content form .form-wrapper .form-actions .form-submit,
+  .dashboard-wrapper .view-filters .views-form .form-wrapper .form-actions .form-submit,
+  .dashboard-wrapper .view-content .views-form .form-wrapper .form-actions .form-submit {
+    margin-top: 24px;
+    padding: 7px 20px;
+  }
+}
+.dashboard-wrapper .pagination {
+  margin: auto 2% 25px;
+}
+@media (min-width: 576px) {
+  .dashboard-wrapper .pagination {
+    margin: 0px;
+  }
+}
+.dashboard-wrapper .pagination li {
+  padding: 0px;
+}
+.dashboard-wrapper .pagination li .page-link {
+  font-size: 70%;
+  padding: 6px 8px;
+  border-radius: 0px;
+}
+.dashboard-wrapper .add-node label {
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+.dashboard-wrapper .add-node .shs-field-container {
+  display: flex;
+  gap: 1.3rem;
+}
+.dashboard-wrapper .add-node .form-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+.dashboard-wrapper .add-node .form-actions #edit-submit {
+  background: var(--water-blue-bg);
+}
+.dashboard-wrapper .add-node .form-actions button {
+  padding: 7px 30px;
+}
+.dashboard-wrapper .add-node .form-actions #edit-preview,
+.dashboard-wrapper .add-node .form-actions #edit-cancel,
+.dashboard-wrapper .add-node .form-actions #edit-overview,
+.dashboard-wrapper .add-node .form-actions #edit-reset-alphabetical {
+  background: #6c757d;
+}
+.dashboard-wrapper .add-node .form-actions #edit-delete {
+  padding: 7px 30px;
+  color: var(--bs-white);
+  background: #f22;
+}
+.dashboard-wrapper .add-node .required-fields button {
+  color: var(--bs-black);
+  padding: 6px 12px;
+  font-size: 12px;
+  margin-top: 12px;
+}
+.dashboard-wrapper .add-node #block-kmp-local-actions nav li {
+  display: flex;
+}
+.dashboard-wrapper .add-node #block-kmp-local-actions nav li a {
+  background: var(--water-blue-bg);
+  padding: 7px 30px;
+  color: var(--bs-white);
+}
+.dashboard-wrapper .delete-node .form-actions #edit-submit {
+  background: #f22;
+}
+.dashboard-wrapper .delete-node .form-actions #edit-cancel {
+  color: var(--bs-white);
+  padding: 6px 12px;
+}
+.dashboard-wrapper .hidden {
+  display: none;
+}
+.dashboard-wrapper .hide-submit #edit-submit {
+  display: none;
+}
+.dashboard-wrapper table.taxonomy a {
+  color: var(--bs-black);
+}

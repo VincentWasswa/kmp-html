@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ministry of Health KMP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/kmp-styles.css" />
+    <link rel="stylesheet" href="assets/icons/font/flaticon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <div id="page-login">
+      <div class="row mx-0">
+        <div class="col-lg-6 col-sm-12 vh-100">
+          <div class="mx-lg-5 p-lg-5">
+            <a href="index.html" title="Home" rel="home" class="navbar-brand hide others-ony">
+              <img src="images/kpm-black-logo.png" alt="Home" class="img-fluid d-inline-block align-top" />
+            </a>
+
+            <div class="highlighted">
+              <aside class="container section clearfix" role="complementary">
+                <div data-drupal-messages-fallback="" class="hidden"></div>
+              </aside>
+            </div>
+
+            <div id="main-wrapper" class="layout-main-wrapper clearfix mt-5 pt-5">
+              <div id="main" class="container">
+                <div class="row row-offcanvas row-offcanvas-left clearfix">
+                  <main class="main-content col" id="content" role="main">
+                    <section class="section user-login">
+                      <a id="main-content" tabindex="-1"></a>
+
+                      <div id="block-kmp-content" class="block block-system block-system-main-block">
+                        <div class="content">
+                          <form class="user-login-form" data-drupal-selector="user-login-form" action="/new/web/user/login?current=/home" method="post" id="user-login-form" accept-charset="UTF-8">
+                            <div class="js-form-item js-form-type-textfield form-type-textfield js-form-item-name form-item-name mb-3">
+                              <label for="edit-name" class="js-form-required form-required">Username</label>
+
+                              <input autocorrect="none" autocapitalize="none" spellcheck="false" autofocus="autofocus" data-drupal-selector="edit-name" aria-describedby="edit-name--description" type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="required form-control rounded-0" required="required" aria-required="true" />
+                              <!-- END OUTPUT from 'themes/custom/kmp/templates/form/input--textfield.html.twig' -->
+
+                              <small id="edit-name--description" class="description text-muted"> Enter your MOH Knowledge Management Portal username. </small>
+                            </div>
+
+                            <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                            <!-- THEME DEBUG -->
+                            <!-- THEME HOOK: 'form_element' -->
+                            <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                            <div class="js-form-item js-form-type-password form-type-password js-form-item-pass form-item-pass mb-3">
+                              <!-- THEME DEBUG -->
+                              <!-- THEME HOOK: 'form_element_label' -->
+                              <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element-label.html.twig' -->
+                              <label for="edit-pass" class="js-form-required form-required">Password</label>
+
+                              <input data-drupal-selector="edit-pass" aria-describedby="edit-pass--description" type="password" id="edit-pass" name="pass" size="60" maxlength="128" class="required form-control" required="required" aria-required="true" />
+
+                              <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+
+                              <small id="edit-pass--description" class="description text-muted"> Enter the password that accompanies your username. </small>
+                            </div>
+
+                            <input autocomplete="off" data-drupal-selector="form-dtpsivl-r0o1wgxsmejh7b6tfvtyahgtusxvgfpd5js" type="hidden" name="form_build_id" value="form-dtpsIvL-r0o1WGxsmEjh7B6tfvTyAHgTUsxvgFpD5Js" class="form-control" />
+
+                            <input data-drupal-selector="edit-user-login-form" type="hidden" name="form_id" value="user_login_form" class="form-control" />
+
+                            <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/input.html.twig' -->
+
+                            <!-- THEME DEBUG -->
+                            <!-- THEME HOOK: 'form_element' -->
+                            <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                            <div class="js-form-item js-form-type-checkbox checkbox form-check mb-3 js-form-item-persistent-login form-item-persistent-login">
+                              <input data-drupal-selector="edit-persistent-login" type="checkbox" id="edit-persistent-login" name="persistent_login" value="1" class="form-checkbox form-check-input" />
+                              <label class="form-check-label" for="edit-persistent-login"> Remember me </label>
+                            </div>
+
+                            <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form-element.html.twig' -->
+
+                            <!-- THEME DEBUG -->
+                            <!-- THEME HOOK: 'container' -->
+                            <!-- BEGIN OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/container.html.twig' -->
+                            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper mb-3" id="edit-actions">
+                              <button data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Log in" class="button js-form-submit form-submit btn btn-primary rounded-0 dark-blue border-0">Log in</button>
+                              <!-- END OUTPUT from 'themes/custom/kmp/templates/form/input--submit-button.html.twig' -->
+                            </div>
+
+                            <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/container.html.twig' -->
+                          </form>
+
+                          <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/form/form.html.twig' -->
+                        </div>
+                      </div>
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/block/block.html.twig' -->
+
+                      <!-- END OUTPUT from 'themes/contrib/bootstrap_barrio/templates/layout/region--nowrap.html.twig' -->
+
+                      <div class="reset-password"><a href="http://library.health.go.ug/new/web/user/password">Forgot password?</a></div>
+                    </section>
+                  </main>
+                </div>
+
+                <div class="mt-5">Don't have an account? <a href="http://library.health.go.ug/new/web/user/register">Sign Up</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 px-0">
+          <div class="login-poster position-relative text-white w-100 top-0 h-100"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  </body>
+</html>

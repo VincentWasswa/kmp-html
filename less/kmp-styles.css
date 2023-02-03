@@ -163,6 +163,10 @@ nav .navbar-nav li .nav-link.active {
 #header-wrapper-front header .wrap form .row div {
   flex-grow: 1;
 }
+#header-wrapper-front header .wrap form .form-row label,
+#header-wrapper-front header .wrap form .row label {
+  display: none;
+}
 #header-wrapper-front header .wrap form .form-row input,
 #header-wrapper-front header .wrap form .row input {
   box-shadow: none;
@@ -495,7 +499,9 @@ nav .navbar-nav li .nav-link.active {
 }
 #main-content .view-filters form .form-row .form-actions,
 #main-content .view-filters form .row .form-actions {
+  display: flex;
   border: 0px;
+  gap: 0.2rem;
 }
 #main-content .view-filters form .form-row .form-actions .form-submit,
 #main-content .view-filters form .row .form-actions .form-submit {
@@ -505,6 +511,10 @@ nav .navbar-nav li .nav-link.active {
   padding: 4px 20px;
   font-size: 85%;
   font-weight: 500;
+}
+#main-content .view-filters form .form-row .form-actions .form-submit:hover,
+#main-content .view-filters form .row .form-actions .form-submit:hover {
+  color: var(--bs-white);
 }
 @media (min-width: 768px) {
   #main-content .view-filters form .form-row .form-actions .form-submit,
@@ -661,6 +671,43 @@ nav .navbar-nav li .nav-link.active {
   margin: 0;
   padding: 1em 0;
 }
+/* Auto complete start */
+.ui-widget.ui-widget-content {
+  display: block !important;
+  font-family: 'Poppins';
+  padding: 0 8px;
+  border: 1px solid #999;
+}
+.ui-widget.ui-widget-content .ui-menu-item {
+  border-bottom: 1px solid #e3e3e3;
+}
+.ui-widget.ui-widget-content .ui-menu-item a {
+  font-size: 85%;
+  line-height: 1.5;
+  border-bottom: 1px solid #999 !important;
+}
+/* Auto complete stop */
+.add-node label {
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+.add-node .shs-field-container {
+  display: flex;
+  gap: 1.3rem;
+}
+.add-node .layout-region-node-footer .form-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+.add-node .layout-region-node-footer .form-actions #edit-submit {
+  background: var(--water-blue-bg);
+}
+.add-node .layout-region-node-footer .form-actions button {
+  padding: 7px 30px;
+}
+.add-node .layout-region-node-footer .form-actions #edit-preview {
+  background: #6c757d;
+}
 .related h2 {
   text-align: left;
 }
@@ -740,27 +787,38 @@ nav .navbar-nav li .nav-link.active {
   background: url(images/lib-bg.jpg);
   background-size: cover;
 }
-#page-login #user-login-form input {
+#page-login #content input {
   border-radius: 0px;
   outline: none;
   box-shadow: none;
   font-size: 85%;
 }
-#page-login #user-login-form .form-actions button {
+#page-login #content .form-actions button {
   background-color: var(--dark-blue);
-  color: #ffffff;
-  min-width: 120px;
+  color: var(--bs-white);
   display: flex;
   min-height: 40px;
   justify-content: center;
   align-items: center;
+  padding: 10px 25px;
 }
-#page-login #user-login-form .form-actions .form-submit {
+#page-login #content .form-actions .form-submit {
   padding: 15px auto;
 }
-#page-login a {
+#page-login #content a {
   color: var(--water-blue-bg);
   text-decoration: none;
+}
+.form-required::after {
+  content: '';
+  vertical-align: super;
+  display: inline-block;
+  background-image: url(../css/images/required.svg);
+  background-repeat: no-repeat;
+  background-size: 7px 7px;
+  width: 7px;
+  height: 7px;
+  margin: 0 0.3em;
 }
 footer {
   color: #fff;

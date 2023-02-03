@@ -495,7 +495,9 @@ nav .navbar-nav li .nav-link.active {
 }
 #main-content .view-filters form .form-row .form-actions,
 #main-content .view-filters form .row .form-actions {
+  display: flex;
   border: 0px;
+  gap: 0.2rem;
 }
 #main-content .view-filters form .form-row .form-actions .form-submit,
 #main-content .view-filters form .row .form-actions .form-submit {
